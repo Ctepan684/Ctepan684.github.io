@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Степан & Алёна - Наша история любви</title>
+    <style>
+        :root {
+            --pink: #ff6b81;
+            --light-pink: #ff8e8e;
+            --dark-pink: #ff4757;
+            --text: #2f3542;
+            --white: #fff;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #ffeef1;
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--pink), var(--light-pink));
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 1rem;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .start-date {
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+        
+        .heart {
+            color: var(--dark-pink);
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        section {
+            padding: 2rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .photo-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .photo-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .photo-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .photo-caption {
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .photo-caption h3 {
+            color: var(--pink);
+            margin-bottom: 0.5rem;
+        }
+        
+        .love-letter {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 800px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .love-letter::before {
+            content: '"';
+            position: absolute;
+            font-size: 8rem;
+            color: rgba(255, 107, 129, 0.1);
+            top: -2rem;
+            left: 0;
+            font-family: serif;
+            line-height: 1;
+            z-index: 0;
+        }
+        
+        .signature {
+            font-family: cursive;
+            font-size: 1.5rem;
+            color: var(--pink);
+            text-align: right;
+            margin-top: 1rem;
+        }
+        
+        footer {
+            background: linear-gradient(to right, var(--pink), var(--light-pink));
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        .counter {
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Степан <span class="heart">❤</span> Алёна</h1>
+        <p class="subtitle">Наша история любви</p>
+        <div class="start-date">
+            Вместе с 13.07.2023 • 03:02
+        </div>
+    </header>
+    
+    <section id="gallery">
+        <h2 style="text-align: center; color: var(--pink);">Наши лучшие моменты</h2>
+        
+        <div class="gallery">
+            <!-- Фото 1 -->
+            <div class="photo-card">
+                <img class="photo-img" src="foto1.jpg" alt="Наше фото">
+                <div class="photo-caption">
+                    <h3>Первая встреча</h3>
+                    <p>Как всё начиналось</p>
+                </div>
+            </div>
+            
+            <!-- Фото 2 -->
+            <div class="photo-card">
+                <img class="photo-img" src="foto2.jpg" alt="Наше фото">
+                <div class="photo-caption">
+                    <h3>Счастливые дни</h3>
+                    <p>Улыбки, которые греют сердце</p>
+                </div>
+            </div>
+            
+            <!-- Фото 3 -->
+            <div class="photo-card">
+                <img class="photo-img" src="foto3.jpg" alt="Наше фото">
+                <div class="photo-caption">
+                    <h3>Вместе</h3>
+                    <p>Лучшие моменты</p>
+                </div>
+            </div>
+            
+            <!-- Фото 4 -->
+            <div class="photo-card">
+                <img class="photo-img" src="foto4.jpg" alt="Наше фото">
+                <div class="photo-caption">
+                    <h3>Романтика</h3>
+                    <p>Нежные мгновения</p>
+                </div>
+            </div>
+            
+            <!-- Фото 5 -->
+            <div class="photo-card">
+                <img class="photo-img" src="foto5.jpg" alt="Наше фото">
+                <div class="photo-caption">
+                    <h3>Приключения</h3>
+                    <p>Совместные поездки</p>
+                </div>
+            </div>
+            
+            <!-- Фото 6 -->
+            <div class="photo-card">
+                <img class="photo-img" src="foto6.jpg" alt="Наше фото">
+                <div class="photo-caption">
+                    <h3>Веселье</h3>
+                    <p>Смех и радость</p>
+                </div>
+            </div>
+            
+            <!-- Фото 7 -->
+            <div class="photo-card">
+                <img class="photo-img" src="foto7.jpg" alt="Наше фото">
+                <div class="photo-caption">
+                    <h3>Тепло</h3>
+                    <p>Объятия и нежность</p>
+                </div>
+            </div>
+            
+            <!-- Фото 8 -->
+            <div class="photo-card">
+                <img class="photo-img" src="foto8.jpg" alt="Наше фото">
+                <div class="photo-caption">
+                    <h3>Любовь</h3>
+                    <p>Навсегда вместе</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="letter">
+        <div class="love-letter">
+            <p>Алёна, моя любимая,</p>
+            <p>С того момента как мы встретились 13 июля 2023 года в 03:02, моя жизнь изменилась навсегда. Ты принесла в неё столько света, тепла и счастья, что теперь я не представляю ни одного дня без тебя.</p>
+            <p>Твоя улыбка делает меня сильнее, твоя поддержка придаёт уверенности, а твоя любовь наполняет моё сердце. Каждый момент, проведённый с тобой, - это подарок судьбы.</p>
+            <p>Я обещаю быть рядом в радости и горе, поддерживать тебя во всех начинаниях и делать всё, чтобы ты чувствовала себя самой любимой.</p>
+            <div class="signature">Твой Степан</div>
+        </div>
+    </section>
+    
+    <footer>
+        <h3>Степан & Алёна</h3>
+        <p>Наша любовь с каждым днём становится только крепче</p>
+        <div class="counter" id="loveCounter"></div>
+    </footer>
+    
+    <script>
+        // Счётчик дней отношений
+        function updateCounter() {
+            const startDate = new Date(2023, 6, 13, 3, 2); // 13.07.2023 03:02
+            const now = new Date();
+            const diff = now - startDate;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            
+            document.getElementById('loveCounter').innerHTML = 
+                `Мы вместе уже: <span>${days}</span> дней <span>${hours}</span> часов <span>${minutes}</span> минут`;
+        }
+        
+        // Проверка загрузки фото
+        function checkPhotos() {
+            const photos = document.querySelectorAll('.photo-img');
+            photos.forEach((photo, index) => {
+                photo.onerror = function() {
+                    this.src = 'https://via.placeholder.com/300x200?text=Фото+' + (index+1);
+                    this.style.border = '2px dashed #ff6b81';
+                };
+            });
+        }
+        
+        // Запуск при загрузке страницы
+        window.onload = function() {
+            updateCounter();
+            checkPhotos();
+            setInterval(updateCounter, 60000); // Обновлять каждую минуту
+        };
+    </script>
+</body>
+</html>
